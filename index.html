@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>TicTacToe game</title>
+</head>
+
+<body>
+    <h1 class="text-center">Tic tac toe game</h1>
+    <div class="row">
+        <div class="offset-1 col-2">
+            <h2>
+                You:
+            </h2>
+
+            <div class="form-check">
+                <input class="form-you" type="radio" name="you" id="cross" value="cross">
+                <label for="cross">X</label>
+            </div>
+            <div class="form-check">
+                <input class="form-you" type="radio" name="you" id="circle" value="circle">
+                <label for="circle">O</label>
+            </div>
+        </div>
+        <div class="col-6" id="loader">
+
+        </div>
+        <div class="col-2">
+            <h2>Enemy: </h2>
+            <div class="form-check">
+                <input class="form-check-input form-enemy"  type="radio" name="level" id="inlineRadio1" value="easy">
+                <label class="form-check-label" for="inlineRadio1">easy</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input form-enemy" type="radio" name="level" id="inlineRadio2" value="medium">
+                <label class="form-check-label" for="inlineRadio2">medium</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input form-enemy" type="radio"  name="level"id="inlineRadio3" value="hard">
+                <label class="form-check-label" for="inlineRadio3">hard</label>
+              </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
